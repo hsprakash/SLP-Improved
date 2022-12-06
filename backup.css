@@ -1,0 +1,285 @@
+/*
+! NOTE FOR CONTRIBUTORS: 
+! When adding new styles to this document, please follow these conventions:
+
+- Do not reference selectors in the css. Instead, create a SCSS variable for the selector and reference that. This allows for more semantic code and makes it easier to remove unused selectors in the future
+- Try to keep colors as constant variables (or functions) instead of referencing them directly in the css. This is to create a design sysem of sorts and makes it easier to tweak things if needed
+- Be mindful of where you put your code. Try to group it with things similar to it. Try to put variable declarations near similar values. Additionally, in the css, there are scss parent selectors added to section the css into several parts
+
+? Design System
+
+The styles for dark mode follow the material dark theme spec as best as possible.
+The spec can be found here: https://material.io/design/color/dark-theme.html
+
+
+*/
+
+/* **Color Plate** */
+$dark-blk: hsl(0, 0%, 0%);
+$dark-900: hsl(0, 0%, 7%);
+$dark-800: hsl(0, 0%, 11%);
+$dark-700: hsl(0, 0%, 14%);
+$dark-600: hsl(0, 0%, 15%);
+$dark-500: hsl(0, 0%, 17%);
+$dark-400: hsl(0, 0%, 18%);
+$dark-300: hsl(0, 0%, 20%);
+$dark-200: hsl(0, 0%, 21%);
+$dark-100: hsl(0, 0%, 22%);
+$dark-50 : hsl(0, 0%, 26%);
+$dark-25 : hsl(0, 0%, 36%);
+
+// Light colors
+$light-900: hsl(0, 0%, 56%);
+$light-800: hsl(0, 0%, 68%);
+$light-700: hsl(0, 0%, 74%);
+$light-600: hsl(0, 0%, 82%);
+$light-500: hsl(0, 0%, 88%);
+$light-400: hsl(0, 0%, 90%);
+$light-300: hsl(0, 0%, 93%);
+$light-200: hsl(0, 0%, 96%);
+$light-100: hsl(0, 0%, 98%);
+light-0{}
+  
+    .page-content-body,
+    .czi-editor-frame-body, .project-feedback-dimension-navigator-backdrop,
+    .app-empty-state-vertical-center {
+      background-color: #121212 !important; }
+    .panel,
+    .courserow-tooltip.tooltip .tooltip-inner,
+    .sdl-course-grades button, .sdl-course-grades .grade-header,
+    .announcement,
+    .better-slp-note-taker-embed {
+      background-color: #1c1c1c !important; }
+    .project-lesson-media-block-objective,
+    .needs-revision-popover,
+    .project-feedback-dimension-navigator,
+    .right-screen-flyout-content,
+    .right-screen-flyout-control {
+      background-color: #242424 !important; }
+    .sdl-week-calendar-today,
+    .announcement-body,
+    .dropdown-menu,
+    .focusarea .selected-panel .panel,
+    .project-feedback-header-container,
+    .platform-doc-header,
+    .project-feedback-header .btn.btn-default,
+    .app .mentor-checkin-prework-flow textarea.form-control,
+    .sdl-goal-popover-delete-button {
+      background-color: #262626 !important; }
+    .goal-panel,
+    .sdl-course-grades button:hover,
+    #notifications-popover,
+    .sdl-goal-popover,
+    .sdl-goal-popover-input-title .form-control,
+    .sdl-goal-popover-create,
+    .sdl-goal-popover-footer,
+    .sdl-goal-popover-input input.form-control, .sdl-goal-popover-footer .rbt-input.form-control,
+    .sdl-goal-popover-input,
+    .project-agenda-timeline-item-icon-background,
+    .project-agenda-timeline-item-line-1, .project-agenda-timeline-item-line-2,
+    .project-day-to-day-side-nav-item:not(.selected),
+    *:not(.notifications-nub):not(.platform-doc-user-badge) > .avatar-profile,
+    .project-feedback-overview-panel.open,
+    .sdl-goal-popover-delete-button:hover,
+    .sdl-goal-popover-delete-toggle-button,
+    .sdl-goal-popover-child {
+      background-color: #2b2b2b !important; }
+    .feedback-help-request-popover.popover,
+    .sdl-goal-popover-delete-toggle-button:hover {
+      background-color: #333333 !important; }
+    .announcement-body-text .audience.badge,
+    .dropdown-menu > li:not(.active) > a:hover, .dropdown-menu > li:not(.active) > a:focus,
+    .tools-item:hover,
+    .project-feedback-dimension-navigator-drilldown-divider,
+    .project-feedback-dimension-navigator-toggle,
+    .open .project-feedback-asset-switcher-selector,
+    .student-request-feedback .student-request-feedback-default .btn-default,
+    .mentor-checkin-footer-buttons .btn-default,
+    .close-popover-button {
+      background-color: #363636 !important; }
+    .this-year-fade .nav-button-container:hover .this-year-nav-button,
+    .platform-doc-header .platform-doc-button:hover,
+    .platform-doc-header #tools-menu-button:hover, .platform-doc-header #tools-menu-button:focus,
+    .project-feedback .project-feedback-asset-switcher .project-feedback-asset-switcher-selector .project-asset-icon,
+    .feedback-help-request-popover.popover .btn-default,
+    .project-feedback-dimension-navigator-score-token:not(.selected) {
+      background-color: #424242 !important; }
+    .this-year-fade .nav-button-container:hover .this-year-nav-button:hover {
+      background-color: #5c5c5c !important; }
+    .sdl-goal-popover-input,
+    .list-group-item,
+    .platform-doc-title-input,
+    .edit-dropdown,
+    .feedback-help-request-popover.popover textarea {
+      background-color: rgba(0, 0, 0, 0) !important; }
+    .project-day-to-day-side-nav-item-theme-default .media-circle-background-circle {
+      background-color: rgba(255, 255, 255, 0.1) !important; }
+    .project-day-to-day-side-nav-item-new-feedback-token,
+    .token, .token-display-only,
+    .project-lesson-media-block-icon-background-circle,
+    .focusarea-diagnostic-btn button {
+      background-color: rgba(255, 255, 255, 0.07) !important; }
+    .app-page-title-group h1,
+    .project-feedback-title,
+    .courserow-details-course-link-heading h2,
+    .app .mentor-checkin-prework-flow textarea.form-control {
+      color: white !important;
+      text-decoration-color: #d1d1d1 !important; }
+    .app-body,
+    .app-subheading, .app-subheading span,
+    .notifications-subtitle,
+    .courserow-tooltip .app-heading:not(.success),
+    .courserow-tooltip .project-status,
+    .project-feedback-header .btn.btn-default,
+    .project-feedback-actions-text,
+    .platform-doc-title-input,
+    .platform-doc-header .platform-doc-button,
+    .platform-doc-header #tools-menu-button,
+    .project-feedback-dimension-navigator-toggle,
+    .feedback-help-request-popover.popover .btn-default,
+    .feedback-help-request-popover.popover strong,
+    .project-feedback-info-overview .app-heading,
+    .history-header,
+    .announcements > div > h2,
+    .announcement .owner-name,
+    .announcement-title,
+    .mentor-checkin-footer-buttons .btn-default,
+    .mentor-checkin-body .subtitle,
+    .announcements > ul > li > h2,
+    .close-popover-button,
+    .sdl-goal-popover-step-header.list-group-item h4,
+    .sdl-goal-popover-input input.form-control, .sdl-goal-popover-footer .rbt-input.form-control,
+    .sdl-goal-popover-header,
+    .sdl-goal-popover-input-title .form-control {
+      color: rgba(255, 255, 255, 0.85) !important;
+      text-decoration-color: #d1d1d1 !important; }
+    .app-tertiaryheading, .app-tertiaryheading span,
+    .app-compact-content-heading, .app-compact-content-heading span,
+    .courserow-score-text,
+    .token, .token-display-only,
+    .sdl-goal-popover-input-title .form-control::placeholder,
+    .dropdown-menu li:not(.active) a,
+    .notification-item-subtitle, #notifications-popover .list-group-item,
+    .platform-doc-saving-indicator,
+    .project-feedback-dimension-navigator-drilldown-content,
+    .tools-item,
+    .feedback-help-request-popover.popover textarea,
+    .feedback-help-request-popover.popover textarea::placeholder,
+    .project-feedback-info-overview .rich-text-note-editor,
+    .announcement-body,
+    .app .text-muted,
+    .sdl-goal-popover-step.list-group-item .step-text,
+    .sdl-goal-popover-steps .sdl-goal-popover-step-header button.goal-step-toggle .goal-step-toggle-label,
+    .sdl-goal-popover-input input.form-control::placeholder, .sdl-goal-popover-footer .rbt-input.form-control::placeholder,
+    .sdl-goal-popover-footer .rbt-input-hint,
+    .sdl-goal-popover-input {
+      color: #8f8f8f !important; }
+    .notification-item:not(.notification-item-unread) .notification-item-title-fragment,
+    .project-feedback-dimension-navigator-score-token:not(.selected),
+    .announcements-page .panel-body .announcement .announcement-body .badge.audience,
+    .sdl-goal-popover-delete-button,
+    .sdl-goal-popover-child {
+      color: #d1d1d1 !important; }
+    .typography-module__colorBase___2P5Eh,
+    .radio label {
+      color: #ededed !important; }
+    .app-empty-state-vertical-center h1 {
+      color: #424242 !important; }
+    .typography-module__colorNeutral___2Xfii,
+    .announcements-page .panel-body .announcement .announcement-details .date {
+      color: #5c5c5c !important; }
+    .focusarea .playlist-panel .score-badge.get-started,
+    .courserow-info > div h3 {
+      color: rgba(255, 255, 255, 0.4) !important; }
+    .btn.btn-default:not(.edit-dropdown) {
+      border-color: rgba(0, 0, 0, 0) !important; }
+    .modal-full-height .modal-content {
+      border: none; }
+    .notification-item-read-bullet,
+    .sdl-goal-popover-input, .sdl-goal-popover-input, .sdl-goal-popover-input input.form-control, .sdl-goal-popover-footer .rbt-input.form-control {
+      border-color: #8f8f8f !important; }
+    .sdl-goal-popover .checkbox input[type=checkbox]:not(:checked):after,
+    .radio-inline input[type=radio]:after, .radio input[type=radio]:after, input[type=radio]:after {
+      border-color: #e6e6e6 !important; }
+    .table-bordered td,
+    .courserow-info.widen.months,
+    .this-year-explore-courses,
+    .courserow-tooltip hr,
+    .project-feedback-overview-panel.open,
+    .history-header,
+    .platform-doc-history-page .list-group .list-group-item,
+    .project-feedback-drawer,
+    .mentor-checkin-footer {
+      border-color: #333333 !important; }
+    .sdl-goal-popover-create, .sdl-goal-popover-footer,
+    .sdl-goal-popover-child,
+    .sdl-goal-popover-header,
+    .sdl-goal-popover-step {
+      border-color: #424242 !important; }
+    .table-bordered td.sdl-week-calendar-today,
+    .notifications-header, .notification-item {
+      border-color: #383838 !important; }
+    .project-feedback-header-container .caret {
+      border-top-color: rgba(255, 255, 255, 0.85); }
+    .default, .courserow-list-item-content-default:not(.success):not(.warning):not(.danger) {
+      background-color: rgba(255, 255, 255, 0.07) !important;
+      color: #bdbdbd !important; }
+    .project-day-to-day-side-nav-item-theme-default .project-day-to-day-side-nav-item-left-aligned-content.green .media-circle-background-circle {
+      background-color: rgba(153, 255, 153, 0.35) !important; }
+    .success:not(.app-heading), .sdl-goal-token-completed .token {
+      background-color: #26402f !important;
+      color: #96e896 !important; }
+      .success:not(.app-heading) i, .sdl-goal-token-completed .token i {
+        background-color: #1f9346 !important; }
+    .score-badge.passed {
+      color: #00e676 !important; }
+    .project-day-to-day-side-nav-item-theme-default .project-day-to-day-side-nav-item-left-aligned-content.yellow .media-circle-background-circle {
+      background-color: rgba(255, 255, 102, 0.35) !important; }
+    .warning:not(.app-heading) {
+      background-color: #3d3d29 !important;
+      color: #e8e896 !important; }
+      .warning:not(.app-heading) i {
+        background-color: #93931f !important; }
+    .score-badge.almost-passed {
+      color: #ffc400 !important; }
+    .project-day-to-day-side-nav-item-theme-default .project-day-to-day-side-nav-item-left-aligned-content.red .media-circle-background-circle {
+      background-color: rgba(255, 102, 102, 0.35) !important; }
+    .danger:not(.app-heading) {
+      background-color: #471f1f !important;
+      color: #e89696 !important; }
+      .danger:not(.app-heading) i {
+        background-color: #931f1f !important; }
+    .score-badge:not(.get-started) {
+      color: #ff5252 !important; }
+    .courserow-tooltip.tooltip .app-heading.success {
+      color: #96e896 !important; }
+    .claro-standard-layout-page .claro-this-year .this-year-outer .this-year-fade.right,
+    .courserow-tooltip.tooltip .tooltip-inner,
+    .goal-drawer,
+    .courserow-info.widen,
+    .focusarea .selected-panel,
+    .feedback-help-request-popover.popover .btn-default {
+      box-shadow: none !important; }
+    .platform-doc-title-input:focus {
+      box-shadow: 0 0 0 2px #424242 !important; }
+    .upper-right-overlay .onboarding-nub {
+      background-color: #1e2c2f !important;
+      border-color: #3a545a !important; }
+      .upper-right-overlay .onboarding-nub * {
+        color: #5db8c6 !important; }
+    .popover.left .arrow::after {
+      border-left-color: #2b2b2b; }
+    .popover.right .arrow::after {
+      border-right-color: #2b2b2b; }
+    .popover.top .arrow::after {
+      border-top-color: #2b2b2b; }
+    .popover.bottom .arrow::after {
+      border-bottom-color: #2b2b2b; }
+    .project-asset-copy-old-work-prompt {
+      background-color: #321b21 !important; }
+    .modal-full-height .modal-content {
+      border-radius: 0; }
+  
+  .drop-shadow {
+    box-shadow: none !important;
+  }

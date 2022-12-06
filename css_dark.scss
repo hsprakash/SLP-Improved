@@ -15,7 +15,7 @@ The spec can be found here: https://material.io/design/color/dark-theme.html
 */
 
 
-/* * Color Constants
+//* * Color Constants
 // Dark colors
 $dark-blk: hsl(0, 0%, 0%);
 $dark-900: hsl(0, 0%, 7%);
@@ -304,7 +304,7 @@ html.better-slp-dark-mode-transitioning * {
 }
 
 // Dark mode stles
-html[bslp-dark] {
+html {
   
   // Dark chrome scrollbar. Interpolation syntax used to avoid a compiler warning since the SCSS transpiler doesnt recognize the `color-scheme` property.
   #{"color-scheme"}: dark;
@@ -682,6 +682,13 @@ html[bslp-dark] {
     #{$notebook-modal-border}
     {
       border-radius: 0;
+    }
+
+    .drop-shadow{
+      box-shadow: none !important;
+    }
+    .courserow-details-course h3{
+      color: $dark-50 !important;
     }
   }
 

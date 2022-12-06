@@ -1,21 +1,29 @@
 {
-"name": "Summit Learning Platform Modifications",
-"version": "1.0.0",
-"author": "Hari Prakash",
-"content_scripts":[{
-    "matches": ["https://*.summitps.org/*"],
-    "css": ["/darktheme.css"]
+    "name": "Summit Learning Improved",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "author": "Hari Prakash",
+    "description": "Summit Learning Platform Modifications",
+    "homepage_url": "https://www.summitlearning.org/my/announcements",
+    "background":{
+        "service_worker": "background.js"
+    },
 
-}],
-"permissions": ["tabs", "storage"],
-"action": {
-    "default_title": "Summit Learning Platform Modifications",
-    "default_popup": "dashbord.html",
-    "default_icon":{
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
+    "content_scripts":[{
+        "matches": ["*://*.summitlearning.org/*"],
+        "js": ["background.js"],
+        "css":["css_dark.css"],
+        "run_at": "document_start"
+    }],
+
+    "action":{
+        "default_icon": "/icons/icon48.png",
+        "default_popup": "dashboard.html",
+        "default_title": "Summit Learning Improved"
+    },
+    "icons":{
+        "16": "/icons/icon16.png",
+        "48": "/icons/icon48.png",
+        "128": "/icons/icon128.png"
     }
-},
-"manifest_version": 3
 }

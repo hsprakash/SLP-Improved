@@ -1,0 +1,50 @@
+.darkmode {
+    --clr-light: #fdffc4;
+    --clr-dark: #00332a;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+.btn-group {
+    margin: 2em 0;
+    display: relative;
+}
+
+.btn {
+    padding: 1em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+}
+
+.btn + .btn {
+    margin-left: 1em; 
+}
+
+.btn-secondary {
+    background: var(--foreground);
+    color: var(--background);
+    border: currentColor solid 2px;
+}
+.btn-accent {
+    background: var(--clr-accent);
+    color: var(--foreground);
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: var(--foreground) 2px solid;
+    left: -4px;
+    top: 4px;
+    border-radius: inherit;
+    z-index: -1;
+}

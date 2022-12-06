@@ -1,5 +1,4 @@
-# SLP Mods
-### Summit Learning Platform Modifications
+# SLP Mods (Summit Learning Platform Modifications)
 
 A browser extension to improve the Summit Learning Platform Experience!
 

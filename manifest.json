@@ -5,5 +5,15 @@
     "version": "1.0.0",
 
     "description": "A collection of modifications to the Summit Learning Platform",
-    "author": "HSP"
+    "author": "HSP",
+
+    "page-action": {
+        "default_icon": {
+            "16": "images/16x16.png",
+            "48": "images/48x48.png",
+            "128": "images/128x128.png"
+        },
+        "default_title": "SLP Mods",
+        "default_popup": "popup.html"
+    }
 }

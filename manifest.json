@@ -1,32 +1,21 @@
 {
-    "manifest_version": 3,
-    "name": "SLP Mods",
-    "version": "1.0.0",
+"name": "Summit Learning Platform Modifications",
+"version": "1.0.0",
+"author": "Hari Prakash",
+"content_scripts":[{
+    "matches": ["https://*.summitps.org/*"],
+    "css": ["/darktheme.css"]
 
-    "description": "Summit Learning Platform Modifications",
-    "author": "HSP",
-    "icons": {
-        "16": "/images/16x16.png",
-        "48": "/images/48x48.png",
-        "128": "/images/128x128.png"
-    },
-
-    "page-action": {
-        "default_icon": {
-            "16": "/images/16x16.png",
-            "48": "/images/48x48.png",
-            "128": "/images/128x128.png"
-        },
-        "default_title": "SLP Mods",
-        "default_popup": "popup.html"
-    },
-
-
-    "content_scripts": [
-        {
-            "matches": ["*://*.summitlearning.org/*"],
-            "js": ["/src/popup.js"],
-            "css": ["/src/popup.css"]
-        }
-    ]
+}],
+"permissions": ["tabs", "storage"],
+"action": {
+    "default_title": "Summit Learning Platform Modifications",
+    "default_popup": "dashbord.html",
+    "default_icon":{
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+},
+"manifest_version": 3
 }

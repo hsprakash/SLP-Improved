@@ -1,19 +1,32 @@
 {
-    "manifest-version": 3,
+    "manifest_version": 3,
     "name": "SLP Mods",
-    "short-name": "Summit Learning Platform Modifications",
     "version": "1.0.0",
 
-    "description": "A collection of modifications to the Summit Learning Platform",
+    "description": "Summit Learning Platform Modifications",
     "author": "HSP",
+    "icons": {
+        "16": "/images/16x16.png",
+        "48": "/images/48x48.png",
+        "128": "/images/128x128.png"
+    },
 
     "page-action": {
         "default_icon": {
-            "16": "images/16x16.png",
-            "48": "images/48x48.png",
-            "128": "images/128x128.png"
+            "16": "/images/16x16.png",
+            "48": "/images/48x48.png",
+            "128": "/images/128x128.png"
         },
         "default_title": "SLP Mods",
         "default_popup": "popup.html"
-    }
+    },
+
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.summitlearning.org/*"],
+            "js": ["/src/popup.js"],
+            "css": ["/src/popup.css"]
+        }
+    ]
 }

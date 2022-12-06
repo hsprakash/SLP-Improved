@@ -6,5 +6,5 @@ This project is currently in development and is not avalible in any exension sto
 
 # Credits 
 
-- @GavHern
+- [@GavHern](https://github.com/GavHern)
 

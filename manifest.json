@@ -11,14 +11,14 @@
         "128": "/images/128x128.png"
     },
 
-    "action": {
-        "default_popup" : "/src/popup.html",
-        "default_title" : "SLP Mods",
-        "icons":{
+    "page-action": {
+        "default_icon": {
             "16": "/images/16x16.png",
             "48": "/images/48x48.png",
             "128": "/images/128x128.png"
-        }
+        },
+        "default_title": "SLP Mods",
+        "default_popup": "popup.html"
     },
 
 

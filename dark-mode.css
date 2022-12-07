@@ -6,7 +6,7 @@ html .czi-editor-frame-body, html .project-feedback-dimension-navigator-backdrop
 html .app-empty-state-vertical-center {
   background-color: hsl(0deg, 0%, 11%) !important;
 }
-html .drop-shadow {
+html .drop-shadow, html .this-year-fade, html .courserow-info.widen {
   box-shadow: none !important;
 }
 html .page-menu {
@@ -15,4 +15,28 @@ html .page-menu {
 html .this-year-fade .nav-button-container:hover .this-year-nav-button,
 html .this-year-fade .nav-button-container:hover .this-year-nav-button:hover {
   box-shadow: none !important;
+}
+html .app-page-title-group h1 {
+  color: hsl(0deg, 0%, 11%) !important;
+}
+html .announcement {
+  background-color: hsl(0deg, 0%, 11%) !important;
+}
+html .announcement-body {
+  background-color: #9e9e9e !important;
+}
+html .announcement-details {
+  color: hsl(0deg, 0%, 11%) !important;
+}
+html .panel-body {
+  background-color: transparent !important;
+}
+html .owner-name {
+  color: hsl(0deg, 0%, 68%) !important;
+}
+html .date {
+  color: hsl(0deg, 0%, 68%) !important;
+}
+html .thisyear-outer {
+  background-color: hsl(0deg, 0%, 11%) !important;
 }/*# sourceMappingURL=dark-mode.css.map */

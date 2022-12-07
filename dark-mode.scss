@@ -29,6 +29,11 @@ html{
         &{
             .thisyear-outer{background-color: $dark-800 !important;}
             // .panel-body{background-color: transparent !important;}
+            .btn-link.this-year-explore-courses{
+                padding: none !important;
+                background-color: $dark-800 !important;
+                color: $dark-800 !important;
+            }
         }
     }
 }

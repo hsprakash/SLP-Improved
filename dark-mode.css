@@ -39,4 +39,9 @@ html .date {
 }
 html .thisyear-outer {
   background-color: hsl(0deg, 0%, 11%) !important;
+}
+html .btn-link.this-year-explore-courses {
+  padding: none !important;
+  background-color: hsl(0deg, 0%, 11%) !important;
+  color: hsl(0deg, 0%, 11%) !important;
 }/*# sourceMappingURL=dark-mode.css.map */

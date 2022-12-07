@@ -1,0 +1,15 @@
+@import "abstracts/all";
+
+html{
+    #{color-scheme}: dark;
+
+    & {
+        // Dark backgrounds
+        & {
+            #{$page-body},
+            #{$notebook-background},
+            #{$notebook-nothing-to-submit-container}{background-color: $dark-900 !important;}
+        }
+        
+    }
+}

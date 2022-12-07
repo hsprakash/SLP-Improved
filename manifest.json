@@ -12,7 +12,7 @@
     "content_scripts":[{
         "matches": ["*://*.summitlearning.org/*"],
         "js": ["background.js"],
-        "css":["css_dark.css"],
+        "css":["dark-mode.css"],
         "run_at": "document_start"
     }],
 

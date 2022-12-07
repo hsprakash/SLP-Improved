@@ -1,14 +1,59 @@
-@import "abstracts/all";
+@import "scss/abstracts/colors", "scss/abstracts/variables";
 
 html{
     #{color-scheme}: dark;
 
     & {
-        // Dark backgrounds
-        & {
+        & { // ! Main Darking
+            .drop-shadow{
+                box-shadow: none !important;
+            }
             #{$page-body},
             #{$notebook-background},
-            #{$notebook-nothing-to-submit-container}{background-color: $dark-900 !important;}
+            //? background color for the entire page
+            #{$notebook-nothing-to-submit-container}{background-color: #23272a !important;}
+
+            #{$panel-element},
+            #{$panel-element},
+            #{$focus-area-hover-tooltip},
+            #{$progress-grades-table-item},
+            #{$announcement-item-container},
+            #{$bslp-note-taker-embed}{background-color: #99aab5 !important;}
+
+            #{$project-plans-top-block},
+            #{$needs-revision-submit-popover},
+            #{$notebook-cog-skill-panel-container},
+			#{$flyout-container},
+			#{$flyout-control}{background-color: #23272a !important}
+            
+            //? Announcement Card
+            #{$week-calendar-current-day-highlight},
+            #{$announcement-item-body}, 
+            #{$dropdown-menu-container},
+            #{$focus-area-resource-collapsable-opened},
+            #{$notebook-checkpoint-header},
+            #{$notebook-doc-header},
+            #{$notebook-doc-header-button},
+			#{$checkin-flyout-textarea},
+			#{$create-goal-popover-delete-button}{background-color: #7289da !important;}
+
+            #{$goal-floating-card},
+            #{$progress-grades-table-link-hover},
+            #{$notification-popover-background},
+            #{$create-goal-popover},
+            #{$create-goal-popover-goal-textarea},
+            #{$create-goal-popover-submit-button},
+            #{$create-goal-popover-add-plan-field-container},
+			#{$create-goal-popover-add-plan-input},
+			#{$create-goal-popover-date-picker},
+            #{$project-plans-timeline-icon-background},
+            #{$project-plans-timeline-connector-line},
+            #{$project-overview-checkpoint-not-selected},
+            #{$avatar-background-not-sidebar},
+            #{$notebook-resources-container},
+			#{$create-goal-popover-delete-button-hover},
+			#{$create-goal-popover-delete-dropdown-toggle},
+			#{$create-goal-popover-subgoal}{background-color: $dark-500 !important;}
         }
         
     }

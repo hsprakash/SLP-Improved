@@ -1,0 +1,56 @@
+html {
+  color-scheme: dark;
+}
+html .drop-shadow {
+  box-shadow: none !important;
+}
+html .page-content-body,
+html .czi-editor-frame-body, html .project-feedback-dimension-navigator-backdrop,
+html .app-empty-state-vertical-center {
+  background-color: #23272a !important;
+}
+html .panel,
+html .panel,
+html .courserow-tooltip.tooltip .tooltip-inner,
+html .sdl-course-grades button, html .sdl-course-grades .grade-header,
+html .announcement,
+html .better-slp-note-taker-embed {
+  background-color: #99aab5 !important;
+}
+html .project-lesson-media-block-objective,
+html .needs-revision-popover,
+html .project-feedback-dimension-navigator,
+html .right-screen-flyout-content,
+html .right-screen-flyout-control {
+  background-color: #23272a !important;
+}
+html .sdl-week-calendar-today,
+html .announcement-body,
+html .dropdown-menu,
+html .focusarea .selected-panel .panel,
+html .project-feedback-header-container,
+html .platform-doc-header,
+html .project-feedback-header .btn.btn-default,
+html .app .mentor-checkin-prework-flow textarea.form-control,
+html .sdl-goal-popover-delete-button {
+  background-color: #7289da !important;
+}
+html .goal-panel,
+html .sdl-course-grades button:hover,
+html #notifications-popover,
+html .sdl-goal-popover,
+html .sdl-goal-popover-input-title .form-control,
+html .sdl-goal-popover-create,
+html .sdl-goal-popover-footer,
+html .sdl-goal-popover-input input.form-control, html .sdl-goal-popover-footer .rbt-input.form-control,
+html .sdl-goal-popover-input,
+html .project-agenda-timeline-item-icon-background,
+html .project-agenda-timeline-item-line-1, html .project-agenda-timeline-item-line-2,
+html .project-day-to-day-side-nav-item:not(.selected),
+html *:not(.notifications-nub):not(.platform-doc-user-badge) > .avatar-profile,
+html .project-feedback-overview-panel.open,
+html .sdl-goal-popover-delete-button:hover,
+html .sdl-goal-popover-delete-toggle-button,
+html .sdl-goal-popover-child {
+  background-color: hsl(0deg, 0%, 17%) !important;
+}/*# sourceMappingURL=dark-mode.css.map */

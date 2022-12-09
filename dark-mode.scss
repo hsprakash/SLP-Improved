@@ -1,39 +1,7 @@
 @import "scss/abstracts/colors", "scss/abstracts/variables";
 
-html{
-    #{color-scheme}: dark;
-
-    & {
-        & { // ! Main Elements
-            #{$page-body},
-            #{$notebook-background},
-            //? background color for the entire page
-            #{$notebook-nothing-to-submit-container}{background-color: $dark-800 !important;}
-
-            .drop-shadow,.this-year-fade,.courserow-info.widen{box-shadow: none !important;}
-            .page-menu{background-color: $dark-900 !important;}
-            #{$year-scroll-nav-button},
-            #{$year-scroll-nav-button-hovered}{box-shadow: none !important;}
-            #{$app-title} {color: $dark-800 !important}
-        }
-        // ! Announcement Container
-        &{  
-            .announcement{background-color: $dark-800 !important;}
-            .announcement-body{background-color: $grey !important;}
-            .announcement-details{color: $dark-800 !important;}
-            .panel-body{background-color: transparent/*$dark-800 */ !important;}
-            .owner-name{color: $light-800 !important;}
-            .date{color: $light-800 !important;}
-        }
-        // ! Year Container
-        &{
-            .thisyear-outer{background-color: $dark-800 !important;}
-            // .panel-body{background-color: transparent !important;}
-            .btn-link.this-year-explore-courses{
-                padding: none !important;
-                background-color: $dark-800 !important;
-                color: $dark-800 !important;
-            }
-        }
+body[data-url="year"] {
+    .panel-body {
+        // Styles here
     }
 }
